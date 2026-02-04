@@ -1,0 +1,500 @@
+:root {
+    --primary-bg-color: #14120b;
+    --secondary-bg-color: #1b1913;
+    --ternary-bg-color: #201e18;
+    --hover-bg-color: #1d1b15;
+    --primary-text-color: #edecec;
+    --secondary-text-color: #edecec99;
+    --primary-border-color: #edecec80;
+    --font-size: 14px;
+    --primary-accent-red: #f54e00;
+    --border-color: #edecec15;
+    --btn-hover-color: #d7d6d5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 5%;
+    position: fixed;
+    background-color: var(--primary-bg-color);
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    font-size: var(--font-size);
+    font-weight: 300;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    opacity: .7;
+    transition: 0.2s;
+}
+.btn-signin {
+    border: 0.5px solid var(--primary-border-color);
+    color: var(--primary-text-color);
+    background-color: transparent;
+    padding: 6px 12px;
+    border-radius: 50px;
+}
+
+.btn-download {
+    background-color: var(--primary-text-color);
+    color: var(--primary-bg-color);
+    border-radius: 50px;
+    padding: 6px 12px;
+    border: none;
+    margin-left: 0.5rem;
+}
+
+main{
+    padding-top: 112px;
+    width: 88%;
+    margin: 0 auto;
+    padding-left: 14px;
+}
+
+main p {
+    color: var(--secondary-text-color);
+    margin-bottom: 4px;
+}
+
+main h1{
+    line-height: 42px;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+main button, .btn-joinus{
+    background-color: var(--primary-text-color);
+    color: var(--primary-bg-color);
+    padding: 13px 24px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+main button:hover, .btn-joinus:hover{
+    background-color: var(--btn-hover-color);
+    transition: 0.1s;
+}
+
+.hero {
+    width: 88%;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.hero img, .joinus-img{
+    width: 1300px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hero p{
+    margin-bottom: 1.5rem;
+    font-family: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.clients{
+    width: 88%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.card {
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid var(--border-color);
+    margin-bottom: 6.25rem;
+}
+
+.card img{
+    height: 40px;
+}
+
+.agent, .autocomplete{
+    width: 88%;
+    margin: 0 auto;
+}
+
+.agent-container, .autocomplete-container{
+    background-color: var(--secondary-bg-color);
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 18px;
+    /* grid-template-columns: 415px 1fr; */
+    border-radius: 4px;
+    border: 0.5px solid var(--border-color);
+    margin-bottom: 6rem;
+}
+
+.agent-container:hover, .autocomplete-container:hover{
+    background-color: var(--hover-bg-color);
+}
+
+.agent-container {
+    grid-template-columns: 415px 1fr;
+}
+
+.autocomplete-container{
+    grid-template-columns: 1fr 415px;
+}
+
+.agent-container h3, .autocomplete-container h3{
+    font-size: 22px;
+    color: var(--primary-text-color);
+    font-weight: 400;
+}
+
+.agent-container p, .autocomplete-container p{
+    font-size: 22px;
+    color: var(--secondary-text-color);
+    font-weight: 400;
+}
+
+.agent-container a, .autocomplete-container a{
+    text-decoration: none;
+    color: var(--primary-accent-red);
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.agent-img, .autocomplete-img{
+    border-radius: 4px;
+}
+
+.testimonials {
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.testimonial-cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.testimonials h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 4rem;
+    font-weight: 400;
+}
+
+.testimonial-card{
+    background-color: var(--secondary-bg-color);
+    border: 0.5px solid var(--border-color);
+    padding: 16px;
+    height: 278px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card p{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+    font-weight: 300;
+}
+
+.testimonial-card .card-footer{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+}
+
+.testimonial-card .card-footer .user-avatar{
+    width: 40px;
+    border-radius: 4px;
+}
+
+.user-details .user-name{
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    padding-top: 4px;
+}
+
+.user-details .user-designation{
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.frontier, .changelog{
+    width: 88%;
+    margin: 10rem auto;
+}
+
+.frontier h2, .changelog h2{
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.frontier-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.frontier-card{
+    height: 560px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.5px solid var(--border-color);
+}
+
+.frontier-card:hover{
+    background-color: var(--hover-bg-color);
+}
+
+.frontier-card h3, .frontier-card p{
+    font-size: 16px;
+    font-weight: 300;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.frontier-card p{
+    color: var(--secondary-text-color);
+}
+
+.frontier-card a{
+    text-decoration: none;
+    color: var(--primary-accent-red);
+}
+
+.frontier-card img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.changelog-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.changelog-card{
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+    border: 0.5px solid var(--border-color);
+    padding: 16px 17px 20px;
+}
+
+.changelog-card:hover{
+    background-color: var(--hover-bg-color);
+}
+
+.changelog-card-date{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--secondary-text-color);
+}
+
+.changelog-card-date .pill{
+    font-size: 14px;
+    padding: 3px 10px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.changelog-card-content{
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.changelog-link{
+    text-decoration: none;
+    color: var(--primary-accent-red);
+    margin-top: 0.8rem;
+}
+
+.joinus{
+    width: 88%;
+    margin: 0 auto;
+}
+
+/* TODO: Recent Highlights section */
+
+.recent-highlights{
+    background-color: var(--secondary-bg-color);
+    padding: 6rem 0;
+}
+
+.recent-highlights-container{
+    width: 88%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 325px 1fr;
+}
+
+.recent-highlights-heading, 
+.recent-highlights-card-heading, 
+.recent-highlights-card-desc, 
+.recent-highlights-card-footer{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.recent-highlights-heading{
+    color: var(--primary-text-color);
+}
+
+.recent-highlights-card{
+    width: 650px;
+    border: 0.5px solid var(--border-color);
+    padding: 13px 16px 16px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: var(--ternary-bg-color);
+}
+
+.recent-highlights-card:hover{
+    background-color: #26241e;
+}
+
+.recent-highlights-card-heading{
+    color: var(--primary-text-color);
+}
+
+.recent-highlights-card-desc{
+    color: var(--secondary-text-color);
+    letter-spacing: 0.08px;
+    width: 88%;
+}
+
+.recent-highlights-card-footer{
+    margin-top: 24px;
+    color: var(--secondary-text-color);
+}
+
+.joinus-heading{
+    font-size: 36px;
+    font-weight: 300;
+    padding-bottom: 22px;
+    width: 35vw;
+    line-height: 44px;
+}
+
+.download-section{
+    padding: 8.4rem 0;
+    width: 88%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.download-section .download-section-heading{
+    font-size: 72px;
+    margin-bottom: 22px;
+    line-height: 79px;
+    font-weight: 400;
+}
+
+.download-btn{
+    background-color: var(--primary-text-color);
+    color: var(--primary-bg-color);
+    padding: 13px 24px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.donwload-btn:hover{
+    background-color: var(--btn-hover-color);
+    transition: 0.1s;
+}
+
+.footer{
+    padding: 4rem 0 5rem 0;
+    background-color: var(--secondary-bg-color);
+}
+
+.footer-links-container{
+    display: grid;
+    width: 88%;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 5rem;
+}
+
+.footer-links-block a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 14px;
+    font-weight: 300;
+    padding: 5px 0;
+    display: block;
+    line-height: 21px;
+}
+
+.footer-links-block a:first-child{
+    color: var(--secondary-text-color);
+}
+
+.copyrights{
+    color: var(--secondary-text-color);
+    margin: 0 auto;
+}
+
+.copyright{
+    padding-left: 5%;
+    height: 33px;
+
+}
